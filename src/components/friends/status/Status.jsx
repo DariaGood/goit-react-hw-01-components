@@ -21,7 +21,6 @@
 import React from 'react';
 import propTypes from 'prop-types';
 import clsx from 'clsx';
-import css from './status.css';
 
 
 function Status(props) {
