@@ -26,6 +26,7 @@ function Friends(props) {
 Friends.propTypes = {
   friends: propTypes.arrayOf(
     propTypes.shape({
+      id: propTypes.number.isRequired,
       isOnline: propTypes.bool.isRequired,
       avatar: propTypes.string.isRequired,
       name: propTypes.string.isRequired

@@ -6,7 +6,6 @@ import css from '../friends.module.css';
 
 function ItemFriend(props) {
   const { id, isOnline, avatar, name } = props;
-  //const itemFriend = props.listFriends;  <span className={clsx('status', { 'bg-red': isOnline } )}>{isOnline}</span>
 
   return (
     <li className={css.item} key={id}>

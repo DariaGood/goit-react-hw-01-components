@@ -9,7 +9,7 @@ export function Profile(props) {
       <div className={css.description}>
         <img src={avatar} alt="User avatar" className={css.avatar} />
         <p className={css.name}>{username}</p>
-        <p className={css.tag}>{tag}</p>
+        <p className={css.tag}>@{tag}</p>
         <p className={css.location}>{location}</p>
       </div>
 
@@ -33,10 +33,7 @@ export function Profile(props) {
 
 Profile.propTypes = {
   username: propTypes.string.isRequired,
-  tag: propTypes.oneOfType([
-    propTypes.string.isRequired,
-    propTypes.oneOf(['@']),
-  ]),
+  tag: propTypes.string.isRequired,
   location: propTypes.string.isRequired,
   avatar: propTypes.string.isRequired,
   stats: propTypes.shape({
