@@ -8,6 +8,7 @@ import friends from '../src/data/allfriends.json';
 import TransactionHistory from './components/transaction/TransactionHistory';
 import transactions from '../src/data/transactions.json';
 
+
 // import ReactDOM from 'react-dom/client';
 // import { App } from './components/App';
 //import './index.css';
