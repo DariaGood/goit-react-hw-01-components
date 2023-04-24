@@ -14,13 +14,14 @@ function Statistics(props) {
 
   return (
     <section className={css.statistics}>
-      {{ title } && <h2 className={css.title}>{title}</h2>}
+      { title  && <h2 className={css.title}>{title}</h2>}
       <ul className={css.statlist}>{itemData}</ul>
     </section>
   );
 }
 
 Statistics.propTypes = {
+  id: propTypes.string,
   title: propTypes.string,
   stats: propTypes.arrayOf(
     propTypes.shape({
